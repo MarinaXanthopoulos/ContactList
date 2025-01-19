@@ -1,20 +1,20 @@
 public class Adult extends Person {
     // Instance variables
-    private boolean isEmployed;
+    private String occupation;
 
     // Constructor
-    public Adult(String firstName, String lastName, String phoneNumber, boolean isEmployed){
+    public Adult(String firstName, String lastName, String phoneNumber, String occupation){
         super(firstName, lastName, phoneNumber);
-        this.isEmployed = isEmployed;
+        this.occupation = occupation;
     }
 
     // Getter
-    public boolean getIsEmployed() {
-        return isEmployed;
+    public String getOccupation() {
+        return occupation;
     }
 
     // ToString
     public String toString(){
-        return super.toString() + " Employed: " + getIsEmployed();
+        return super.toString() + " Employed: " + getOccupation();
     }
 }
